@@ -1,0 +1,13 @@
+name = "Twig"
+grammar = "twig"
+path_suffixes = ["twig"]
+line_comments = ["{# ", " #}"]
+block_comments = ["{# ", " #}"]
+brackets = [
+    { start = "{{", end = "}}", close = true, newline = true },
+    { start = "{{-", end = "-}}", close = true, newline = true },
+    { start = "{{~", end = "~}}", close = true, newline = true },
+    { start = "{%", end = "%}", close = true, newline = true },
+    { start = "{%-", end = "-%}", close = true, newline = true },
+    { start = "{%~", end = "~%}", close = true, newline = true },
+]
